@@ -61,7 +61,7 @@ public class ExasolConnectionManager
     
     @Override
     protected ExasolConnection createDatabaseObject(DBRProgressMonitor monitor,
-            DBECommandContext context, ExasolDataSource parent, Object copyFrom)
+            DBECommandContext context, final ExasolDataSource parent, Object copyFrom)
             throws DBException
     {
         return new UITask<ExasolConnection>() {

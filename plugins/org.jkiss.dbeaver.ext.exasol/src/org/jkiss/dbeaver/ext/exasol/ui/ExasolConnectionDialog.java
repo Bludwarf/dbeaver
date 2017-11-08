@@ -70,10 +70,10 @@ public class ExasolConnectionDialog extends BaseDialog {
         final Text commentText = UIUtils.createLabelText(group,"Description", "");
 
 
-        Button saveCred = UIUtils.createCheckbox(group, "Provide Credentials","Credential", false, 2);
-        Text userText = UIUtils.createLabelText(group, "User", "");
+        final Button saveCred = UIUtils.createCheckbox(group, "Provide Credentials","Credential", false, 2);
+        final Text userText = UIUtils.createLabelText(group, "User", "");
         userText.setEnabled(false);
-        Text passwordText = UIUtils.createLabelText(group, "Password", "", SWT.PASSWORD);
+        final Text passwordText = UIUtils.createLabelText(group, "Password", "", SWT.PASSWORD);
         passwordText.setEnabled(false);
 
         

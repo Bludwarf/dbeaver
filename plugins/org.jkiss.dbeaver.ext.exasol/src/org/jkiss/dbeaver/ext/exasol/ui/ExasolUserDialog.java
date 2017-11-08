@@ -67,8 +67,8 @@ public class ExasolUserDialog extends BaseDialog {
 
         final Text commentText = UIUtils.createLabelText(group,"Comment", "");
         
-        Text passwordText = UIUtils.createLabelText(group, "Password", "", SWT.PASSWORD);
-        Button ldapDNCheck = UIUtils.createCheckbox(group, "LDAP User", "Create LDAP User", false, 2);
+        final Text passwordText = UIUtils.createLabelText(group, "Password", "", SWT.PASSWORD);
+        final Button ldapDNCheck = UIUtils.createCheckbox(group, "LDAP User", "Create LDAP User", false, 2);
         final Text urlText = UIUtils.createLabelText(group,"LDAP DN", "");
         urlText.setEnabled(false);
 

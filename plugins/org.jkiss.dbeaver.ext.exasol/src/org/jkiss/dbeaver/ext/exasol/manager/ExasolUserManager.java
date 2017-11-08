@@ -40,7 +40,7 @@ public class ExasolUserManager extends SQLObjectEditor<ExasolUser, ExasolDataSou
 	
 	@Override
 	protected ExasolUser createDatabaseObject(DBRProgressMonitor monitor,
-			DBECommandContext context, ExasolDataSource parent, Object copyFrom)
+			DBECommandContext context, final ExasolDataSource parent, Object copyFrom)
 			throws DBException
 	{
 		return new UITask<ExasolUser>() {
