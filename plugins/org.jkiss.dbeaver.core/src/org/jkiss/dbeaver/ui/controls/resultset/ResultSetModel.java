@@ -298,6 +298,9 @@ public class ResultSetModel {
         return curRows.get(index);
     }
 
+    /**
+     * @return <code>null</code> if user has not clicked "Calculate total row count" (like a refresh button)
+     */
     public Long getTotalRowCount() {
         return totalRowCount;
     }
